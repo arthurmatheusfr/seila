@@ -1,8 +1,8 @@
 namespace projetopet;
 
-public class capivara : Personagem;
+public class Capivara : Personagem;
 
-public Capybara() : base()
+public Capivara() : base()
   {
     Setfomelvl(0.9);
     Setsedelvl(0.6);

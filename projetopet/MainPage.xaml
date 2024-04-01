@@ -6,4 +6,41 @@
     <Image Source="fundopantano.jpeg"
            Aspect="AspectFill"/>
 
+           <Image x:Name="PersonagemImagem"
+           Source="capivara.webp"
+           HeightRequest="400"
+           Margin="0"
+           Aspect="AspectFill"
+           VerticalOptions="End"/>
+
+            <Grid Margin="20, 50, 20, 0"
+          ColumnSpacing="10"
+          RowSpacing="10">
+          <Grid.RowDefinitions>
+           <RowDefinition Height="35"/>
+           <RowDefinition Height="35"/>
+           <RowDefinition Height="35"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="35"/>
+           <ColumnDefinition Width="*"/>
+           </Grid.ColumnDefinitions>
+      
+
+          <Image Source="pinha.avif"
+               HeightRequest="30"
+               Aspect="AspectFit"
+               Grid.Row="0"
+               Grid.Column="0"/>
+        
+        
+        <ProgressBar x:Name="BarradeProgressãoTristeza"
+                     Progress="1"
+                     BackgroundColor="White"
+                     ProgressColor="Green"
+                     Grid.Row="0"
+                     Grid.Column="1"/>
+      
+
+
 </ContentPage>

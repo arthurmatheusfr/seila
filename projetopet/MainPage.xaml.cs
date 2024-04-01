@@ -12,8 +12,6 @@ public partial class MainPage : ContentPage
     PersonagemList.Add(new Capivara());
     PersonagemList.Add(new Gaivota());
     PersonagemList.Add(new Jacare());
-
-
 	}
 
 	

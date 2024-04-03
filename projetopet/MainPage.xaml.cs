@@ -13,11 +13,11 @@ public partial class MainPage : ContentPage
   }
   void QuandoClicarnoBotao(Object Sender, EventArgs args)
   {
-   if (atual==Personagem1)
-      atual = Personagem2;
-    else if(atual==Personagem2)
-    atual = Personagem1;
-    personagemimagem.Source=atual.GetImageName();
+   if (Atual==Personagem1)
+      Atual = Personagem2;
+    else if(Atual==Personagem2)
+    Atual = Personagem1;
+    personagemimagem.Source=Atual.GetImageName();
   }
 	
 }

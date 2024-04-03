@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetopet.MainPage"
              Shell.NavBarIsVisible="false">
-
+<Grid>
     <Image Source="fundopantano.jpeg"
            Aspect="AspectFill"/>
 
-            <Grid Margin="20, 50, 20, 0"
-          ColumnSpacing="10"
-          RowSpacing="10">
+            
           <Grid.RowDefinitions>
            <RowDefinition Height="35"/>
            <RowDefinition Height="35"/>
@@ -19,6 +17,7 @@
            <ColumnDefinition Width="35"/>
            <ColumnDefinition Width="*"/>
            </Grid.ColumnDefinitions>
+           
       
 
           <Image Source="pinha.avif"
@@ -41,5 +40,5 @@
            Aspect="AspectFill"/>
       
 
-
+</Grid>
 </ContentPage>

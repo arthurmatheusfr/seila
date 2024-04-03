@@ -1,7 +1,7 @@
 namespace projetopet;
 
-public class Capivara : Personagem;
-
+public class Capivara : Personagem
+{
 public Capivara() : base()
   {
     Setfomelvl(0.9);
@@ -39,3 +39,4 @@ public override void Brincar()
     var currentfomelvl = Getfomelvl();
     Setfomelvl(currentfomelvl - .02);
   }
+}

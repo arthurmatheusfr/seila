@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projetopet.MainPage">
+             x:Class="projetopet.MainPage"
+             Shell.NavBarIsVisible="false">
 
     <Image Source="fundopantano.jpeg"
            Aspect="AspectFill"/>
-
-           <Image x:Name="PersonagemImagem"
-           Source="capivara.webp"
-           HeightRequest="400"
-           Margin="0"
-           Aspect="AspectFill"
-           VerticalOptions="End"/>
 
             <Grid Margin="20, 50, 20, 0"
           ColumnSpacing="10"
@@ -40,6 +34,11 @@
                      ProgressColor="Green"
                      Grid.Row="0"
                      Grid.Column="1"/>
+        
+        <Image x:Name="personagemimagem"
+           HeightRequest="400"
+           Margin="0"
+           Aspect="AspectFill"/>
       
 
 

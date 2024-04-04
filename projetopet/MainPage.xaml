@@ -1,44 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetopet.MainPage"
              Shell.NavBarIsVisible="false">
-<Grid>
-    <Image Source="fundopantano.jpeg"
-           Aspect="AspectFill"/>
+    <Grid>
+        <Image Source="fundopantano.jpg"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"/>
 
-            
-          <Grid.RowDefinitions>
-           <RowDefinition Height="35"/>
-           <RowDefinition Height="35"/>
-           <RowDefinition Height="35"/>
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-           <ColumnDefinition Width="35"/>
-           <ColumnDefinition Width="*"/>
-           </Grid.ColumnDefinitions>
-           
-      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-          <Image Source="pinha.avif"
+        <Image Source="pinha.avif"
                HeightRequest="30"
                Aspect="AspectFit"
                Grid.Row="0"
                Grid.Column="0"/>
-        
-        
+
         <ProgressBar x:Name="BarradeProgressãoTristeza"
                      Progress="1"
                      BackgroundColor="White"
                      ProgressColor="Green"
                      Grid.Row="0"
                      Grid.Column="1"/>
-        
-        <Image x:Name="personagemimagem"
-           HeightRequest="400"
-           Margin="0"
-           Aspect="AspectFill"/>
-      
 
-</Grid>
+        <Image x:Name="personagemimagem"
+               HeightRequest="40"
+               Margin="0"
+               Aspect="AspectFill"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"/>
+    </Grid>
 </ContentPage>
+

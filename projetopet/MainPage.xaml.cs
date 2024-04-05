@@ -2,19 +2,19 @@
 
 public partial class MainPage : ContentPage
 {
-    private Capivara Personagem1;
-    private Jacare Personagem2;
-    private Gaivota Personagem3;
-    private Personagem Atual;
+     Capivara Personagem1;
+     Jacare Personagem2;
+     Flamengo Personagem3;
+     Personagem Atual;
     public MainPage()
     {
         InitializeComponent();
         
         Personagem1 = new Capivara();
         Personagem2 = new Jacare();
-        Personagem3 = new Gaivota();
+        Personagem3 = new Flamengo();
         Atual = Personagem1;
-        personagemimagem.Source = Atual.GetImageName();
+        ImagemPet.Source = Atual.GetArquivo();
     }
 
     void QuandoClicarnoBotao(Object sender, EventArgs args)
@@ -24,6 +24,6 @@ public partial class MainPage : ContentPage
         else if (Atual == Personagem2)
             Atual = Personagem1;
         
-        personagemimagem.Source = Atual.GetImageName();
+        ImagemPet.Source = Atual.GetArquivo();
     }
 }

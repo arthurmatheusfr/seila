@@ -6,18 +6,14 @@ public class Personagem
  double fomelvl;
  double sedelvl;
  double tristelvl;
-
+protected string PersonagemImagem;
 public Personagem()
   {
     fomelvl  = 0;
     sedelvl = 0;
     tristelvl = 0;
   }
-   public virtual string GetImageName()
  
- {
-    return "";
-  }
  protected void Setfomelvl(double level)
   {
     if (level >= 0 && level <= 1)
@@ -62,30 +58,9 @@ protected void Settristelvl(double level)
     return tristelvl;
   }
 
-  public virtual void Comer()
-  {
-    var currentfomelvl = Getfomelvl();
-    Setfomelvl(currentfomelvl + 0.1);
+public string GetArquivo()
+ 
+ {
+    return PersonagemImagem;
   }
-public virtual void Beber()
-  {
-    var currentsedelvl = Getsedelvl();
-    Setsedelvl(currentsedelvl + 0.1);
-  }
-   public virtual void Brincar()
-  {
-    var currenttristelvl = Gettristelvl();
-    Settristelvl(currenttristelvl + 0.1);
-  }
-public virtual void TempoPassado()
-  {
-    var currenttristelvl = Gettristelvl();
-    Settristelvl(currenttristelvl - .01);
-
-    var currentsedelvl = Getsedelvl();
-    Setsedelvl(currentsedelvl - .01);
-
-    var currentfomelvl = Getfomelvl();
-    Setfomelvl(currentfomelvl - .01);
-}
 }

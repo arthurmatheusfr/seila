@@ -3,41 +3,37 @@
              x:Class="projetopet.MainPage"
              Shell.NavBarIsVisible="false">
     <Grid>
-        <Image Source="fundopantano.jpg"
-               Aspect="AspectFill"
-               HorizontalOptions="Fill"
-               VerticalOptions="Fill"/>
+
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="35"/>
-        </Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+            </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
-        <Image Source="pinha.avif"
-               HeightRequest="30"
-               Aspect="AspectFit"
-               Grid.Row="0"
-               Grid.Column="0"/>
-
-        <ProgressBar x:Name="BarradeProgressãoTristeza"
-                     Progress="1"
-                     BackgroundColor="White"
-                     ProgressColor="Green"
-                     Grid.Row="0"
-                     Grid.Column="1"/>
-
-        <Image x:Name="personagemimagem"
-               HeightRequest="40"
-               Margin="0"
+             <Image Source="fundo.jpg"
                Aspect="AspectFill"
-               Grid.Row="1"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"
+               Grid.RowSpan="6"
+               Grid.ColumnSpan="4"/>
+        
+
+        <Image x:Name="ImagemPet"
+               HorizontalOptions="Center"
+               Aspect="AspectFill"
+               Grid.Row="3"
+               Grid.RowSpan="3"
                Grid.Column="0"
-               Grid.ColumnSpan="2"/>
+               Grid.ColumnSpan="4"/>
     </Grid>
 </ContentPage>
 

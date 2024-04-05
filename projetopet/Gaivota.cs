@@ -1,3 +1,3 @@
 namespace projetopet;
 
-public class Gaivota : Personagem;
+public class Flamengo : Personagem;

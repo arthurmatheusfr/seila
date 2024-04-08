@@ -7,6 +7,9 @@ public class Personagem
  double sedelvl;
  double tristelvl;
 protected string PersonagemImagem;
+protected string GameOver;
+protected string PersonagemNome;
+bool AnimalMorto;
 public Personagem()
   {
     fomelvl  = 0;
@@ -14,42 +17,42 @@ public Personagem()
     tristelvl = 0;
   }
  
- protected void Setfomelvl(double level)
+ public void Setfomelvl(double h)
   {
-    if (level >= 0 && level <= 1)
-      fomelvl = level;
-    else if (level < 0)
-      fomelvl = 0;
-    else
-      fomelvl = 1;
+   if(h < 0)
+   fomelvl = 0;
+   else if (h > 1)
+   fomelvl = 1;
+   else
+   fomelvl = h;
   }
 public double Getfomelvl()
   {
     return fomelvl;
   }
   
-   protected void Setsedelvl(double level)
+   protected void Setsedelvl(double t)
   {
-    if (level >= 0 && level <= 1)
-      sedelvl = level;
-    else if (level < 0)
-      sedelvl = 0;
-    else
-      sedelvl = 1;
+     if(t < 0)
+   sedelvl = 0;
+   else if (t > 1)
+   sedelvl = 1;
+   else
+   sedelvl = t;
   }
 
  public double Getsedelvl()
   {
     return sedelvl;
   }
-protected void Settristelvl(double level)
+protected void Settristelvl(double s)
   {
-    if (level >= 0 && level <= 1)
-      tristelvl = level;
-    else if (level < 0)
-      tristelvl = 0;
-    else
-      tristelvl = 1;
+     if(s < 0)
+   sedelvl = 0;
+   else if (s > 1)
+   sedelvl = 1;
+   else
+   sedelvl = s;
   }
  
 
@@ -61,6 +64,14 @@ protected void Settristelvl(double level)
 public string GetArquivo()
  
  {
+  if(AnimalMorto == true)
+      return GameOver;
+      else
     return PersonagemImagem;
+  }
+
+  public string GetPersonagemNome()
+  {
+    return PersonagemNome;
   }
 }

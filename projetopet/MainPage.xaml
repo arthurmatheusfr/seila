@@ -26,6 +26,15 @@
                Grid.RowSpan="6"
                Grid.ColumnSpan="4"/>
         
+        <ImageButton Source="halter1.png"
+              Grid.Row="0"
+              Margin="0, 10"
+              Clicked="ClicouHalterDireito"/>
+        
+        <ImageButton Source="halter2.png"
+              Grid.Row="1"
+              Margin="0, 10"
+              Clicked="ClicouHalterEsquerdo"/>
 
         <Image x:Name="ImagemPet"
                HorizontalOptions="Center"
@@ -34,6 +43,7 @@
                Grid.RowSpan="3"
                Grid.Column="0"
                Grid.ColumnSpan="4"/>
+
     </Grid>
 </ContentPage>
 

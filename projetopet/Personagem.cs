@@ -9,7 +9,7 @@ public class Personagem
 protected string PersonagemImagem;
 protected string GameOver;
 protected string PersonagemNome;
-bool AnimalMorto;
+bool Morte;
 public Personagem()
   {
     fomelvl  = 0;
@@ -64,7 +64,7 @@ protected void Settristelvl(double s)
 public string GetArquivo()
  
  {
-  if(AnimalMorto == true)
+  if(Morte == true)
       return GameOver;
       else
     return PersonagemImagem;

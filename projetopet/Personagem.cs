@@ -9,7 +9,7 @@ public class Personagem
 protected string PersonagemImagem;
 protected string GameOver;
 protected string PersonagemNome;
-bool Morte;
+bool Morte = false;
 public Personagem()
   {
     fomelvl  = 0;
@@ -31,7 +31,7 @@ public double Getfomelvl()
     return fomelvl;
   }
   
-   protected void Setsedelvl(double t)
+   public void Setsedelvl(double t)
   {
      if(t < 0)
    sedelvl = 0;
@@ -45,14 +45,14 @@ public double Getfomelvl()
   {
     return sedelvl;
   }
-protected void Settristelvl(double s)
+public void Settristelvl(double s)
   {
      if(s < 0)
-   sedelvl = 0;
+   tristelvl = 0;
    else if (s > 1)
-   sedelvl = 1;
+   tristelvl = 1;
    else
-   sedelvl = s;
+   tristelvl = s;
   }
  
 
@@ -74,4 +74,5 @@ public string GetArquivo()
   {
     return PersonagemNome;
   }
+  
 }

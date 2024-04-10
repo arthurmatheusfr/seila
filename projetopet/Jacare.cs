@@ -5,5 +5,7 @@ public class Jacare : Personagem
 public Jacare()
 {
    PersonagemImagem ="jacare.png";
+   PersonagemNome ="Lacoste";
+
 }
 }

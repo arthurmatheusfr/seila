@@ -60,7 +60,14 @@ public void Settristelvl(double s)
   {
     return tristelvl;
   }
-
+ public bool GetAnimalMorto()
+    {
+        if(Sede <= 0.1 || Fome <= 0.1 || Felicidade <= 0.1)
+            return true;
+        
+        else   
+            return false;
+    }
 public string GetArquivo()
  
  {

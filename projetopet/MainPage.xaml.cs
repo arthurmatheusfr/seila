@@ -8,10 +8,15 @@ public partial class MainPage : ContentPage
      Jacare Personagem2;
      Flamengo Personagem3;
      Personagem Atual;
-    public MainPage()
-    {
-        InitializeComponent();
-        
+   public MainPage()
+{
+	var timer = Application.Current.Dispatcher.CreateTimer();
+	timer.Interval = TimeSpan.FromSeconds(1);
+	timer.Tick += (s,e) => PassouTempo();
+	timer.Start();
+
+
+
         Personagem1 = new Capivara();
         Personagem2 = new Jacare();
         Personagem3 = new Flamengo();
@@ -22,9 +27,11 @@ public partial class MainPage : ContentPage
         Atual.Setsedelvl(0.5);
         Atual.Setfomelvl(0.5);
         Atual.Settristelvl(0.5);
+
+
     
     }
-     void TempoPassado()
+     void PassouTempo()
      {
          if(Atual.Morte())
          {
@@ -82,5 +89,27 @@ public partial class MainPage : ContentPage
     
     
     }
+    private void ClicouBotaoGh(object sender, EventArgs args) 
+	{
+		Atual.Setfomelvl(Atual.Getfomelvl() + 0.1);
+		BarraHormonio.Progress = Atual.Getfomelvl();
+	}
+
+
+
+	private void ClicouBotaoDurateston(object sender, EventArgs args) 
+	{
+		Atual.Setsedelvl(Atual.Getsedelvl() + 0.1);
+		BarraBomba.Progress = Atual.Getsedelvl();
+	}
+
+
+
+	private void ClicouBotaoDeca(object sender, EventArgs args) 
+	{
+		Atual.Settristelvl(Atual.Gettristelvl() + 0.1);
+		BarraCalvicie.Progress = Atual.Gettristelvl();
+
+	}
         
 }
